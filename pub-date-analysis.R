@@ -3,8 +3,10 @@ queries <- read.csv("data/longitudinal/queries.csv",
 
 # Subset queries that were limited by pub dates
 dqueries <- subset(queries, PubDate == 1)
+
 # Subset queries to include only count data 
-dtqueries <- subset(queries, select = c(October:September))
+dtqueries <- subset(dqueries, select = c(October:September))
+
 # Transpose dataframe
 dtqueries <- t(dtqueries)
 dtqueries <- as.data.frame(dtqueries)
@@ -218,7 +220,6 @@ plot(dtqueries$OML011, type = "b", frame = FALSE,
 
 ## Zooming out
 #png('plots/plot003-011zoom-out.png', width = 1920, height = 1080, pointsize = 24)
-#layout(cbind(1, 2, 3))
 par(mfrow = c(3,3))
 plot(dtqueries$PMML003, type = "b",
      frame = FALSE, pch = 19,
@@ -286,7 +287,6 @@ lines(dtqueries$EHML005, type = "b", pch = 19, col = "orange")
 lines(dtqueries$WSML005, type = "b", pch = 19, col = "purple")
 lines(dtqueries$OML005, type = "b", pch = 19, col = "black")
 
-#layout(cbind(1, 2, 3))
 plot(dtqueries$PMML006, type = "b",
      frame = FALSE, pch = 19,
      col = "blue",
@@ -353,7 +353,6 @@ lines(dtqueries$EHML008, type = "b", pch = 19, col = "orange")
 lines(dtqueries$WSML008, type = "b", pch = 19, col = "purple")
 lines(dtqueries$OML008, type = "b", pch = 19, col = "black")
 
-#layout(cbind(1, 2, 3))
 plot(dtqueries$PMML009, type = "b",
      frame = FALSE, pch = 19,
      col = "blue",
