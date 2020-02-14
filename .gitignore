@@ -3,6 +3,8 @@
 .RData
 .Ruserdata
 medline-longitudinal.Rproj
+alise/data/
+alise/plots/
+alise/submission/
 data/
 plots/
-alise/submission/
