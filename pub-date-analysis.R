@@ -20,229 +20,67 @@ table(changes)
 dqueries$changes <- changes
 rm(changes)
 
-#png('plots/plot003-005zoom-in.png', width = 1920, height = 1080, pointsize = 24)
-par(mfrow = c(3,5))
-plot(dtqueries$PMML003, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 003")
-plot(dtqueries$PQML003, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 003")
-plot(dtqueries$EHML003, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 003")
-plot(dtqueries$WSML003, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 003")
-plot(dtqueries$OML003, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 003")
+png('plots/plot004-005zoom-in.png', width = 1920, height = 1080, pointsize = 24)
+par(mfrow = c(2, 5))
+with(dtqueries, {
+        plot(PMML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 004")
+        plot(PQML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 004")
+        plot(EHML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 004")
+        plot(WSML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 004")
+        plot(OML004,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 004")
+        plot(PMML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 005")
+        plot(PQML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 005")
+        plot(EHML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 005")
+        plot(WSML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 005")
+        plot(OML005,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 005")
+})
+dev.off()
 
-plot(dtqueries$PMML004, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 004")
-plot(dtqueries$PQML004, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 004")
-plot(dtqueries$EHML004, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 004")
-plot(dtqueries$WSML004, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 004")
-plot(dtqueries$OML004, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 004")
- 
-plot(dtqueries$PMML005, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 005")
-plot(dtqueries$PQML005, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 005")
-plot(dtqueries$EHML005, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 005")
-plot(dtqueries$WSML005, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 005")
-plot(dtqueries$OML005, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 005")
-#dev.off()
+png('plots/plot006-008zoom-in.png', width = 1920, height = 1080, pointsize = 24)
+par(mfrow = c(3, 5))
+with(dtqueries, {
+        plot(PMML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 006")
+        plot(PQML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 006")
+        plot(EHML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 006")
+        plot(WSML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 006")
+        plot(OML006,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 006")
+        plot(PMML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 007")
+        plot(PQML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 007")
+        plot(EHML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 007")
+        plot(WSML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 007")
+        plot(OML007,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 007")
+        plot(PMML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 008")
+        plot(PQML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 008")
+        plot(EHML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 008")
+        plot(WSML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 008")
+        plot(OML008,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 008")
+})
+dev.off()
 
-#png('plots/plot006-008zoom-in.png', width = 1920, height = 1080, pointsize = 24)
-par(mfrow = c(3,5))
-plot(dtqueries$PMML006, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 006")
-plot(dtqueries$PQML006, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 006")
-plot(dtqueries$EHML006, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 006")
-plot(dtqueries$WSML006, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 006")
-plot(dtqueries$OML006, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 006")
-
-plot(dtqueries$PMML007, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 007")
-plot(dtqueries$PQML007, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 007")
-plot(dtqueries$EHML007, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 007")
-plot(dtqueries$WSML007, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 007")
-plot(dtqueries$OML007, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 007")
-
-plot(dtqueries$PMML008, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 008")
-plot(dtqueries$PQML008, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 008")
-plot(dtqueries$EHML008, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 008")
-plot(dtqueries$WSML008, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 008")
-plot(dtqueries$OML008, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 008")
-#dev.off()
-
-#png('plots/plot009-011zoom-in.png', width = 1920, height = 1080, pointsize = 24)
-par(mfrow = c(3,5))
-plot(dtqueries$PMML009, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 009")
-plot(dtqueries$PQML009, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 009")
-plot(dtqueries$EHML009, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 009")
-plot(dtqueries$WSML009, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 009")
-plot(dtqueries$OML009, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 009")
-
-plot(dtqueries$PMML010, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 010")
-plot(dtqueries$PQML010, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 010")
-plot(dtqueries$EHML010, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 010")
-plot(dtqueries$WSML010, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 010")
-plot(dtqueries$OML010, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 010")
-
-plot(dtqueries$PMML011, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "PubMed, Query 011")
-plot(dtqueries$PQML011, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "ProQuest, Query 011")
-plot(dtqueries$EHML011, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "EBSCOhost, Query 011")
-plot(dtqueries$WSML011, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Web of Science, Query 011")
-plot(dtqueries$OML011, type = "b", frame = FALSE,
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Ovid, Query 011")
-#dev.off()
+png('plots/plot009-011zoom-in.png', width = 1920, height = 1080, pointsize = 24)
+par(mfrow = c(3, 5))
+with(dtqueries, {
+        plot(PMML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 009")
+        plot(PQML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 009")
+        plot(EHML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 009")
+        plot(WSML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 009")
+        plot(OML009,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 009")
+        plot(PMML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 010")
+        plot(PQML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 010")
+        plot(EHML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 010")
+        plot(WSML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 010")
+        plot(OML010,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 010")
+        plot(PMML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 011")
+        plot(PQML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 011")
+        plot(EHML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 011")
+        plot(WSML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 011")
+        plot(OML011,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 011")
+})
+dev.off()
 
 ## Zooming out
-#png('plots/plot003-011zoom-out.png', width = 1920, height = 1080, pointsize = 24)
+png('plots/plot004-011zoom-out.png', width = 1920, height = 1080, pointsize = 24)
 par(mfrow = c(3,3))
-plot(dtqueries$PMML003, type = "b",
-     frame = FALSE, pch = 19,
-     col = "blue",
-     xlab = "Months",
-     ylab = "Search Hits",
-     main = "Query Set 003",
-     xlim=c(0,13),
-     ylim=c(min(c(dtqueries$PMML003,
-                  dtqueries$PQML003,
-                  dtqueries$EHML003,
-                  dtqueries$WSML003,
-                  dtqueries$OML003)) - 500,
-            max(c(dtqueries$PMML003,
-                  dtqueries$PQML003,
-                  dtqueries$EHML003,
-                  dtqueries$WSML003,
-                  dtqueries$OML003)) + 500))
-lines(dtqueries$PQML003, type = "b", pch = 19, col = "red")
-lines(dtqueries$EHML003, type = "b", pch = 19, col = "orange")
-lines(dtqueries$WSML003, type = "b", pch = 19, col = "purple")
-lines(dtqueries$OML003, type = "b", pch = 19, col = "black")
-
 plot(dtqueries$PMML004, type = "b",
      frame = FALSE, pch = 19,
      col = "blue",
@@ -419,8 +257,8 @@ lines(dtqueries$EHML011, type = "b", pch = 19, col = "orange")
 lines(dtqueries$WSML011, type = "b", pch = 19, col = "purple")
 lines(dtqueries$OML011, type = "b", pch = 19, col = "black")
 
-legend("bottomright", legend=c("PMML", "PQML", "EMML",
+legend("top", legend=c("PMML", "PQML", "EMML",
                             "WSML", "OML"),
        col = c("blue", "red", "orange", "purple", "black"),
-       lty=1:5, cex=1.5)
-#dev.off()
+       lty=1:5, cex=0.8, ncol = 5)
+dev.off()
