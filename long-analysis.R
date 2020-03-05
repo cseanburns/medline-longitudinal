@@ -34,6 +34,7 @@ ln.ranges <- data.frame(lnranges)
 ln.ranges$Sets <- rownames(ln.ranges)
 
 # Create a vector where pubdate is Logical for all of the data
+# True = PubDate ; False = No PubDate
 pdtf <- table(lqueries$Set[lqueries$PubDate == 1])
 pdtf <- pdtf > 0
 pdtf <- data.frame(pdtf)
@@ -42,13 +43,14 @@ pdtf$Sets <- rownames(pdtf)
 # Combine the data frames
 l.ranges <- merge(l.ranges, pdtf, by.y = "Sets")
 
-# Plot
+# Plot, log_2 transformation
 barplot(log(l.ranges$lranges + 1), las=2, xlab = "Sets", ylab = "Range Per Set")
 barplot(log(ld.ranges$ldranges + 1), las=2, xlab = "Sets", ylab = "Range Per Set")
 barplot(log(ln.ranges$lnranges + 1), las=2, xlab = "Sets", ylab = "Range Per Set")
 
 # Plot with Logical Values
 mycols <- c("white", "black")
-barplot(log(l.ranges$lranges + 1), las=2,
+barplot(sort(log(l.ranges$lranges + 1)), las=2,
         xlab = "Sets", ylab = "Range Per Set (log_2 + 1)",
+        main = "Annual Growth of Search Count Results",
         col = mycols[as.factor(l.ranges$pdtf)])
