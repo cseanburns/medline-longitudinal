@@ -20,7 +20,7 @@ table(changes)
 dqueries$changes <- changes
 rm(changes)
 
-png('plots/plot004-005zoom-in.png', width = 1920, height = 1080, pointsize = 24)
+jpeg('plots/plot004-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(2, 5))
 with(dtqueries, {
         plot(PMML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 004")
@@ -36,7 +36,7 @@ with(dtqueries, {
 })
 dev.off()
 
-png('plots/plot006-008zoom-in.png', width = 1920, height = 1080, pointsize = 24)
+jpeg('plots/plot006-008zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 006")
@@ -57,7 +57,7 @@ with(dtqueries, {
 })
 dev.off()
 
-png('plots/plot009-011zoom-in.png', width = 1920, height = 1080, pointsize = 24)
+jpeg('plots/plot009-011zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 009")
@@ -79,7 +79,7 @@ with(dtqueries, {
 dev.off()
 
 ## Zooming out
-png('plots/plot004-011zoom-out.png', width = 1920, height = 1080, pointsize = 24)
+jpeg('plots/plot004-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3,3))
 plot(dtqueries$PMML004, type = "b",
      frame = FALSE, pch = 19,
