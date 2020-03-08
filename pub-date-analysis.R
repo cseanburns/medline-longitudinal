@@ -20,7 +20,7 @@ table(changes)
 dqueries$changes <- changes
 rm(changes)
 
-jpeg('plots/plot004-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/plot004-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(2, 5))
 with(dtqueries, {
         plot(PMML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 004")
@@ -34,9 +34,9 @@ with(dtqueries, {
         plot(WSML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 005")
         plot(OML005,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 005")
 })
-dev.off()
+#dev.off()
 
-jpeg('plots/plot006-008zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/plot006-008zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 006")
@@ -55,9 +55,9 @@ with(dtqueries, {
         plot(WSML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 008")
         plot(OML008,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 008")
 })
-dev.off()
+#dev.off()
 
-jpeg('plots/plot009-011zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/plot009-011zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 009")
@@ -76,10 +76,10 @@ with(dtqueries, {
         plot(WSML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 011")
         plot(OML011,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 011")
 })
-dev.off()
+#dev.off()
 
 ## Zooming out
-jpeg('plots/plot004-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/plot004-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3,3))
 plot(dtqueries$PMML004, type = "b",
      frame = FALSE, pch = 19,
@@ -261,4 +261,4 @@ legend("top", legend=c("PMML", "PQML", "EMML",
                             "WSML", "OML"),
        col = c("blue", "red", "orange", "purple", "black"),
        lty=1:5, cex=0.8, ncol = 5)
-dev.off()
+#dev.off()
