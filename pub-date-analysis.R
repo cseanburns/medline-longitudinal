@@ -1,3 +1,4 @@
+library("magicfor")
 queries <- read.csv("data/longitudinal/queries.csv",
                     header = TRUE, row.names = 1, sep = ",")
 
@@ -13,6 +14,7 @@ dtqueries <- as.data.frame(dtqueries)
 dtqueries$months <- rownames(dtqueries)
 
 # Which sets stayed stable throughout data collection
+# Of all sets
 changes <- dqueries$September - dqueries$October
 # get a count of queries with no changes
 table(changes)
@@ -20,9 +22,22 @@ table(changes)
 dqueries$changes <- changes
 rm(changes)
 
+# Get total number of searches that did not change from the first month
+# to the last month for queries with publication dates
+magic_for(print, silent = TRUE)
+for(i in dtqueries[,1:45]) { 
+  print(max(i) - min(i))
+}
+table(magic_result_as_vector())
+
 #jpeg('plots/plot004-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
-par(mfrow = c(2, 5))
+par(mfrow = c(3, 5))
 with(dtqueries, {
+        plot(PMML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 003")
+        plot(PQML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 003")
+        plot(EHML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 003")
+        plot(WSML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 003")
+        plot(OML003,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 003")
         plot(PMML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 004")
         plot(PQML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 004")
         plot(EHML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 004")
@@ -79,8 +94,30 @@ with(dtqueries, {
 #dev.off()
 
 ## Zooming out
-#jpeg('plots/plot004-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/plot003-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3,3))
+plot(dtqueries$PMML003, type = "b",
+     frame = FALSE, pch = 19,
+     col = "blue",
+     xlab = "Months",
+     ylab = "Search Hits",
+     main = "Query Set 003",
+     xlim=c(0,13),
+     ylim=c(min(c(dtqueries$PMML003,
+                  dtqueries$PQML003,
+                  dtqueries$EHML003,
+                  dtqueries$WSML003,
+                  dtqueries$OML003)) - 500,
+            max(c(dtqueries$PMML003,
+                  dtqueries$PQML003,
+                  dtqueries$EHML003,
+                  dtqueries$WSML003,
+                  dtqueries$OML003)) + 500))
+lines(dtqueries$PQML003, type = "b", pch = 19, col = "red")
+lines(dtqueries$EHML003, type = "b", pch = 19, col = "orange")
+lines(dtqueries$WSML003, type = "b", pch = 19, col = "purple")
+lines(dtqueries$OML003, type = "b", pch = 19, col = "black")
+
 plot(dtqueries$PMML004, type = "b",
      frame = FALSE, pch = 19,
      col = "blue",
