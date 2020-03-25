@@ -47,13 +47,13 @@ mycols <- c("white", "black")
 
 or.lranges <- lranges[with(lranges, order(pdtf, lranges)), ]
 
-#jpeg('plots/plot-ranges.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+jpeg('plots/fig5-plot-ranges.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(1, 1))
 barplot(log10(or.lranges$lranges + 1), las=2,
         xlab = "Sets", ylab = "Range Per Set (log_10 + 1)",
         main = "Annual Growth of Search Count Results",
         col = mycols[as.factor(or.lranges$pdtf)])
-#dev.off()
+dev.off()
 
 # With outliers
 wqueries<- queries
@@ -69,6 +69,7 @@ wqueries <- gather(wqueries, months, counts, October:September, factor_key = TRU
 # the database platform
 ## all ranges
 wranges <- sort(tapply(wqueries$counts, wqueries$Set, max) - tapply(wqueries$counts, wqueries$Set, min))
+
 
 # Save ranges as data frames
 wranges <- data.frame(wranges)
