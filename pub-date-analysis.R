@@ -33,63 +33,63 @@ table(magic_result_as_vector())
 jpeg('plots/fig2-plot003-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
-        plot(PMML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 003")
-        plot(PQML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 003")
-        plot(EHML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 003")
-        plot(WSML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 003")
-        plot(OML003,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 003")
-        plot(PMML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 004")
-        plot(PQML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 004")
-        plot(EHML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 004")
-        plot(WSML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 004")
-        plot(OML004,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 004")
-        plot(PMML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 005")
-        plot(PQML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 005")
-        plot(EHML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 005")
-        plot(WSML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 005")
-        plot(OML005,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 005")
+        plot(PMML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 003")
+        plot(PQML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 003")
+        plot(EHML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 003")
+        plot(WSML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 003")
+        plot(OML003,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 003")
+        plot(PMML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 004")
+        plot(PQML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 004")
+        plot(EHML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 004")
+        plot(WSML004, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 004")
+        plot(OML004,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 004")
+        plot(PMML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 005")
+        plot(PQML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 005")
+        plot(EHML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 005")
+        plot(WSML005, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 005")
+        plot(OML005,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 005")
 })
 dev.off()
 
 jpeg('plots/fig3-plot006-008zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
-        plot(PMML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 006")
-        plot(PQML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 006")
-        plot(EHML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 006")
-        plot(WSML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 006")
-        plot(OML006,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 006")
-        plot(PMML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 007")
-        plot(PQML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 007")
-        plot(EHML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 007")
-        plot(WSML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 007")
-        plot(OML007,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 007")
-        plot(PMML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 008")
-        plot(PQML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 008")
-        plot(EHML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 008")
-        plot(WSML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 008")
-        plot(OML008,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 008")
+        plot(PMML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 006")
+        plot(PQML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 006")
+        plot(EHML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 006")
+        plot(WSML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 006")
+        plot(OML006,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 006")
+        plot(PMML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 007")
+        plot(PQML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 007")
+        plot(EHML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 007")
+        plot(WSML007, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 007")
+        plot(OML007,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 007")
+        plot(PMML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 008")
+        plot(PQML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 008")
+        plot(EHML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 008")
+        plot(WSML008, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 008")
+        plot(OML008,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 008")
 })
 dev.off()
 
 jpeg('plots/fig4-plot009-011zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
-        plot(PMML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 009")
-        plot(PQML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 009")
-        plot(EHML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 009")
-        plot(WSML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 009")
-        plot(OML009,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 009")
-        plot(PMML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 010")
-        plot(PQML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 010")
-        plot(EHML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 010")
-        plot(WSML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 010")
-        plot(OML010,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 010")
-        plot(PMML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Query 011")
-        plot(PQML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Query 011")
-        plot(EHML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Query 011")
-        plot(WSML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Query 011")
-        plot(OML011,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Query 011")
+        plot(PMML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 009")
+        plot(PQML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 009")
+        plot(EHML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 009")
+        plot(WSML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 009")
+        plot(OML009,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 009")
+        plot(PMML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 010")
+        plot(PQML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 010")
+        plot(EHML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 010")
+        plot(WSML010, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 010")
+        plot(OML010,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 010")
+        plot(PMML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 011")
+        plot(PQML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "ProQuest, Search 011")
+        plot(EHML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "EBSCOhost, Search 011")
+        plot(WSML011, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Web of Science, Search 011")
+        plot(OML011,  type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "Ovid, Search 011")
 })
 dev.off()
 
@@ -101,7 +101,7 @@ plot(dtqueries$PMML003, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 003",
+     main = "Search Set 003",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML003,
                   dtqueries$PQML003,
@@ -123,7 +123,7 @@ plot(dtqueries$PMML004, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 004",
+     main = "Search Set 004",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML004,
                   dtqueries$PQML004,
@@ -145,7 +145,7 @@ plot(dtqueries$PMML005, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 005",
+     main = "Search Set 005",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML005,
                   dtqueries$PQML005,
@@ -167,7 +167,7 @@ plot(dtqueries$PMML006, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 006",
+     main = "Search Set 006",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML006,
                   dtqueries$PQML006,
@@ -189,7 +189,7 @@ plot(dtqueries$PMML007, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 007",
+     main = "Search Set 007",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML007,
                   dtqueries$PQML007,
@@ -211,7 +211,7 @@ plot(dtqueries$PMML008, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 008",
+     main = "Search Set 008",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML008,
                   dtqueries$PQML008,
@@ -233,7 +233,7 @@ plot(dtqueries$PMML009, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 009",
+     main = "Search Set 009",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML009,
                   dtqueries$PQML009,
@@ -255,7 +255,7 @@ plot(dtqueries$PMML010, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 010",
+     main = "Search Set 010",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML010,
                   dtqueries$PQML010,
@@ -277,7 +277,7 @@ plot(dtqueries$PMML011, type = "b",
      col = "blue",
      xlab = "Months",
      ylab = "Search Hits",
-     main = "Query Set 011",
+     main = "Search Set 011",
      xlim=c(0,13),
      ylim=c(min(c(dtqueries$PMML011,
                   dtqueries$PQML011,
