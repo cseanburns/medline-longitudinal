@@ -47,7 +47,8 @@ mycols <- c("white", "black")
 
 or.lranges <- lranges[with(lranges, order(pdtf, lranges)), ]
 
-jpeg('plots/fig5-plot-ranges.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+tiff('plots/fig5-plot-ranges.tif', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/fig5-plot-ranges.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(1, 1))
 barplot(log10(or.lranges$lranges + 1), las=2,
         xlab = "Sets", ylab = "Range Per Set (log_10 + 1)",

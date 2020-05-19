@@ -30,7 +30,8 @@ for(i in dtqueries[,1:45]) {
 }
 table(magic_result_as_vector())
 
-jpeg('plots/fig2-plot003-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+tiff('plots/fig2-plot003-005zoom-in.tif', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/fig2-plot003-005zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML003, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 003")
@@ -51,7 +52,8 @@ with(dtqueries, {
 })
 dev.off()
 
-jpeg('plots/fig3-plot006-008zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+tiff('plots/fig3-plot006-008zoom-in.tif', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/fig3-plot006-008zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML006, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 006")
@@ -72,7 +74,8 @@ with(dtqueries, {
 })
 dev.off()
 
-jpeg('plots/fig4-plot009-011zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+tiff('plots/fig4-plot009-011zoom-in.tif', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/fig4-plot009-011zoom-in.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3, 5))
 with(dtqueries, {
         plot(PMML009, type = "b", frame = FALSE, xlab = "Months", ylab = "Search Hits", main = "PubMed, Search 009")
@@ -94,7 +97,8 @@ with(dtqueries, {
 dev.off()
 
 ## Zooming out
-jpeg('plots/fig1-plot003-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
+tiff('plots/fig1-plot003-011zoom-out.tif', width = 3840, height = 2160, pointsize = 12, res = 300)
+#jpeg('plots/fig1-plot003-011zoom-out.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 par(mfrow = c(3,3))
 plot(dtqueries$PMML003, type = "b",
      frame = FALSE, pch = 19,
