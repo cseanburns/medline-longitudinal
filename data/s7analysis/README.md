@@ -1,5 +1,7 @@
 # About
 
+Exploratory analysis:
+
 To examine why searches limited by pub dates return different but close results across the five MEDLINE platforms.
 
 Basing this on search s07 in the queries spreadsheet on Google Drive.

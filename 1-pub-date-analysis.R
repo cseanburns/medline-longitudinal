@@ -1,5 +1,5 @@
 library("magicfor")
-queries <- read.csv("data/longitudinal/queries.csv",
+queries <- read.csv("data/queries.csv",
                     header = TRUE, row.names = 1, sep = ",")
 
 # Subset queries that were limited by pub dates

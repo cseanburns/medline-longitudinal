@@ -1,6 +1,6 @@
 library(tidyr)
 
-queries <- read.csv("data/longitudinal/queries.csv",
+queries <- read.csv("data/queries.csv",
                     header = TRUE, row.names = 1, sep = ",")
 
 lqueries<- queries
