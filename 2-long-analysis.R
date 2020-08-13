@@ -1,13 +1,19 @@
-# This script calculates and plots takes the modified z-score of the difference
-# between results returned for each database and for each case from October 2018
-# to September 2019; cases marked TRUE are cases with queries that contained
-# publication dates:
+# DESCRIPTION:
+# This script calculates and plots the modified z-score based on the differences
+# between the results returned for each database and for each case from October
+# 2018 to September 2019.
+# 
+# Process:
+
 # First the range (min and max) is taken for the searches for each database over
-# the course of the year of data collection
-# Second the modified z-scores are calculated on the *ranges* for each case and
-# that the PubMed range acts as the center -- that means that the ranges for
-# the other database searches in the cases are varying around the range for
-# PubMed
+# the course of the year of data collection.
+# 
+# Second the modified z-scores are calculated on the five *ranges* in each case.
+# PubMed is the center (rather than the median), which means that the ranges for
+# the four other database searches in the each case vary around the range for
+# PubMed in each case.
+#
+# This script generates Figures 7 and 8.
 
 source("0-libraries.R")
 rm(list = ls())

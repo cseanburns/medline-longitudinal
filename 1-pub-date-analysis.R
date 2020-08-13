@@ -1,6 +1,10 @@
-# This script generates several figures that provide close up (micro) and
-# far out (macro) views of the cases with queries that were restricted by
-# publication date. Figures 3 through 6 are generated here.
+# DESCRIPTION: 
+# 
+# This script generates several figures that provide close up (micro) and far
+# out (macro) views of the cases with queries that were restricted by
+# publication date.
+#
+# This script generates Figures 3 through 6.
 
 source("0-libraries.R")
 rm(list = ls())

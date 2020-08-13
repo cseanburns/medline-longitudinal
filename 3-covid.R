@@ -1,3 +1,12 @@
+# DESCRIPTION:
+#
+# This script generates a line plot based multipled searches in multiple PubMed
+# databases for a semantically equivalent query. The query is based on an early
+# COVID19 search published by NIH/NLM. 
+# 
+# This script generates Figure 9.
+
+
 covidqueries <- read.csv("data/covid-pubmed-searches-long.csv", sep = ",")
 covidqueries$Date <- as.Date(covidqueries$Date, "%Y-%m-%d")
 
