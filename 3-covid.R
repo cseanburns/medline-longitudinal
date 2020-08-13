@@ -1,6 +1,6 @@
 # DESCRIPTION:
 #
-# This script generates a line plot based multipled searches in multiple PubMed
+# This script generates a line plot based on multiple searches in multiple PubMed
 # databases for a semantically equivalent query. The query is based on an early
 # COVID19 search published by NIH/NLM. 
 # 
