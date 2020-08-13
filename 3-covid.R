@@ -2,7 +2,6 @@ covidqueries <- read.csv("data/covid-pubmed-searches-long.csv", sep = ",")
 covidqueries$Date <- as.Date(covidqueries$Date, "%Y-%m-%d")
 
 tiff('plots/fig6-covid-searches.tif', width = 3840, height = 2160, pointsize = 12, res = 300)
-#jpeg('plots/fig6-covid-searches.jpg', width = 3840, height = 2160, pointsize = 12, res = 300)
 plot(covidqueries$Date[covidqueries$Databases=="PubMedLegacyMostRecent"],
      covidqueries$Hits[covidqueries$Databases=="PubMedLegacyMostRecent"],
      type = "b",
