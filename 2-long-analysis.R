@@ -79,7 +79,8 @@ mz1 <- ggplot(modz1, aes(Cases, ProQuest, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -95,7 +96,8 @@ mz2 <- ggplot(modz2, aes(Cases, EBSCOhost, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -111,7 +113,8 @@ mz3 <- ggplot(modz3, aes(Cases, WoS, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -127,7 +130,8 @@ mz4 <- ggplot(modz4, aes(Cases, Ovid, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -147,7 +151,8 @@ mz5 <- ggplot(modz5, aes(Cases, ProQuest, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -163,7 +168,8 @@ mz6 <- ggplot(modz6, aes(Cases, EBSCOhost, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -179,7 +185,8 @@ mz7 <- ggplot(modz7, aes(Cases, WoS, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
@@ -195,7 +202,8 @@ mz8 <- ggplot(modz8, aes(Cases, Ovid, fill = PubDate)) +
   theme_minimal() +
   coord_flip() +
   guides(fill=guide_legend(title=NULL)) +
-  scale_fill_ucscgb(breaks = c(FALSE, TRUE),
+  scale_fill_manual(breaks = c(FALSE, TRUE),
+                    values = c("#E69F00", "#56B4E9"), 
                     labels = c("w/o Pub Date", "w/ Pub Date")) +
   theme(axis.text.x = element_text(
     angle = 45,
