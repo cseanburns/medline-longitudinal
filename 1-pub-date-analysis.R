@@ -317,7 +317,7 @@ legend("topright",
   inset = c(-0.3, 0),
   legend = c("PMML", "PQML", "EMML", "WSML", "OML"),
   col = c("blue", "red", "orange", "purple", "black"),
-  lty = 1:5, cex = 0.8
+  lty = 1, cex = 1.2, bty = "n"
 )
 dev.off()
 
