@@ -8,13 +8,20 @@ EBSCOHost, Ovid, ProQuest, and Web of Science.
 
 ## Manuscript Info
 
-Preprint has been uploaded to [bioRxiv][1] and is available at
-https://doi.org/10.1101/2020.05.22.110403
+The paper that uses this code and data has been published at *PLOS ONE*.
+
+Burns, C.S., Nix, T., Shapiro II, R.M., Huber, J.T. (2021). MEDLINE search retrieval issues: A longitudinal query analysis of five vendor platforms. *PLOS ONE, 16*(5), e0234221. [https://doi.org/10.1371/journal.pone.0234221][3].
+
+The preprint was uploaded to [bioRxiv][1] and is available at
+[https://doi.org/10.1101/2020.05.22.110403][2]
 
 ## Conference Presentation
 
 The ``alise/`` folder contains project files for a work in progress
 presentation delivered at the ALISE 2019 Annual Conference in Knoxville, TN.
-http://hdl.handle.net/2142/105350
+[http://hdl.handle.net/2142/105350][4]
 
 [1]:https://www.biorxiv.org/
+[2]:https://doi.org/10.1101/2020.05.22.110403
+[3]:https://doi.org/10.1371/journal.pone.0234221
+[4]:http://hdl.handle.net/2142/105350
