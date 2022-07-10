@@ -13,6 +13,12 @@ EBSCOHost, Ovid, ProQuest, and Web of Science.
 
 ## Manuscript Info
 
+The first paper from the initial data collected
+in this study was published in **JMLA**.
+See the
+[medline-jmla-2019](https://github.com/cseanburns/medline-jmla-2019)
+for details.
+
 The paper that uses this code and data has been published at *PLOS ONE*.
 
 Burns, C.S., Nix, T., Shapiro II, R.M., Huber, J.T. (2021). MEDLINE search retrieval issues: A longitudinal query analysis of five vendor platforms. *PLOS ONE, 16*(5), e0234221. [https://doi.org/10.1371/journal.pone.0234221][3].
