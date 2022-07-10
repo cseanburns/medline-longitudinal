@@ -1,9 +1,9 @@
 # MEDLINE Study
 
-The code and data for this study produced
+**The code and data for this study produced
 the paper and conference proceeding below.
 This research project has concluded, and
-this repository has been archived (made read-only).
+this repository has been archived (made read-only).**
 
 Longitudinal study of five MEDLINE platforms.
 
